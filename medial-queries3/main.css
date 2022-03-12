@@ -1,3 +1,78 @@
 body {
   background: peachpuff;
 }
+*{
+  border: 1px solid black;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header{
+  min-width: 100vw;
+  min-height: 10vh;
+  margin: .5em;
+  flex-grow: 2;
+}
+
+
+.second{
+  display: flex;
+  justify-content: space-between;
+  margin: .5em;
+  flex-grow: 1;
+  
+}
+
+.third{
+  display: flex;
+  justify-content: space-between;
+  margin: .5em;
+  flex-grow: 1;
+}
+.e , .f, .g, .b , .c , .d {
+  min-width: 32vw;
+  min-height: 25vh;
+
+}
+footer{
+  min-height: 40vh;
+  margin: .5em;
+  flex-grow: 2;
+
+}
+
+@media(min-width: 600px){
+  .container{
+    flex-direction: row;
+  }
+
+  header{
+    width: 80%;
+    min-height: 30vh;
+  }
+
+  .third , .second{
+    min-height: 20vh;
+    flex-basis: 70%;
+    justify-content: stretch;
+    gap: 10px;
+    margin: 1em;
+   
+    
+  }
+  .e , .f, .g, .b , .c , .d {
+    min-width: 20vw;
+    min-height: 30vh;
+  }
+  footer{
+    margin: .5em;
+    flex-grow: 3;
+    min-height: 60vh;
+}
+
+}
